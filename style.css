@@ -1564,6 +1564,38 @@ section::before {
     color: var(--text-secondary);
 }
 
+.dark-mode .skill-category h3,
+.dark-mode .skill-item span {
+    color: var(--text-primary) !important;
+}
+
+.dark-mode .skill-category {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.dark-mode .skill-category h3 {
+    color: var(--text-primary);
+}
+
+.dark-mode .skill-category h3 i {
+    color: var(--primary-color);
+}
+
+.dark-mode .skill-item {
+    color: var(--text-secondary);
+}
+
+.dark-mode .skill-item span {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+}
+
+.dark-mode .skill-bar {
+    background: rgba(71, 85, 105, 0.4);
+}
+
 .dark-mode .skill-progress {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
@@ -1620,22 +1652,22 @@ section::before {
     background: linear-gradient(135deg, rgba(129, 140, 248, 0.2), rgba(165, 180, 252, 0.2));
 }
 
-/* Fix dark mode button styles */
-.dark-mode .btn-primary {
+/* Fix purple overlays in dark mode */
+.dark-mode section::before {
+    background: linear-gradient(90deg, transparent, rgba(129, 140, 248, 0.2), transparent);
+}
+
+.dark-mode .section-title::before {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border: none;
-    color: white;
+    opacity: 0.05;
 }
 
-.dark-mode .btn-secondary {
-    background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-.dark-mode .btn-secondary:hover {
-    background: var(--primary-color);
-    color: white;
+.dark-mode .hero::before {
+    background: linear-gradient(45deg, 
+        rgba(129, 140, 248, 0.02) 0%, 
+        transparent 25%, 
+        transparent 75%, 
+        rgba(165, 180, 252, 0.02) 100%);
 }
 
 /* Enhanced Mobile Experience */
@@ -1777,4 +1809,55 @@ section::before {
     .timeline-content {
         margin: 0 4rem;
     }
+}
+
+/* Fix all purple overlays and improve dark mode text visibility */
+.dark-mode .about::before,
+.dark-mode .skills::before,
+.dark-mode .experience::before,
+.dark-mode .projects::before,
+.dark-mode .contact::before {
+    opacity: 0.05 !important;
+}
+
+.dark-mode .info-card::before,
+.dark-mode .skill-category::before,
+.dark-mode .project-card::before {
+    opacity: 0.03 !important;
+}
+
+/* Fix button styles in dark mode */
+.dark-mode .btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    color: white;
+}
+
+.dark-mode .btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.dark-mode .btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Ensure all text is visible in dark mode */
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: var(--text-primary) !important;
+}
+
+.dark-mode p, .dark-mode span, .dark-mode li {
+    color: var(--text-secondary) !important;
+}
+
+.dark-mode .skill-item span {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+}
+
+.dark-mode .timeline-content li {
+    color: var(--text-secondary) !important;
 }
