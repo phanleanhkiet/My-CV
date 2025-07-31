@@ -1,15 +1,6 @@
 {
-  "functions": {
-    "app/**": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -29,7 +20,7 @@
       ]
     },
     {
-      "source": "/(.*).(js|css|png|jpg|jpeg|gif|ico|svg)",
+      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg))",
       "headers": [
         {
           "key": "Cache-Control",
