@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Lê Anh Kiệt - Web & Game Developer</title>
+    <meta name="description" content="CV của Phan Lê Anh Kiệt (castleP) - Web & Game Developer. Sinh viên năm 4 chuyên ngành Web & AI, đam mê phát triển web và game.">
+    <meta name="keywords" content="Phan Lê Anh Kiệt, castleP, Web Developer, Game Developer, Unity, SvelteKit, JavaScript, TypeScript, CV, Portfolio">
+    <meta name="author" content="Phan Lê Anh Kiệt">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Phan Lê Anh Kiệt - Web & Game Developer">
+    <meta property="og:description" content="CV của Phan Lê Anh Kiệt (castleP) - Web & Game Developer. Sinh viên năm 4 chuyên ngành Web & AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://my-cv-phanleanhkiet.vercel.app">
+    <meta property="og:image" content="https://my-cv-phanleanhkiet.vercel.app/og-image.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Phan Lê Anh Kiệt - Web & Game Developer">
+    <meta name="twitter:description" content="CV của Phan Lê Anh Kiệt (castleP) - Web & Game Developer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">castleP</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#skills" class="nav-link">Kỹ năng</a>
+                <a href="#experience" class="nav-link">Kinh nghiệm</a>
+                <a href="#projects" class="nav-link">Dự án</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Xin chào, tôi là</span>
+                        <span class="title-name">Phan Lê Anh Kiệt</span>
+                        <span class="title-subtitle">Web & Game Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Sinh viên năm 4 chuyên ngành Web & AI, đam mê phát triển web và game. 
+                        Đã hoàn thành nhiều dự án thực chiến từ thiết kế đến triển khai.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
+                        <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar-container">
+                        <div class="avatar-bg"></div>
+                        <img src="https://via.placeholder.com/300x300/667eea/ffffff?text=AK" alt="Phan Lê Anh Kiệt" class="avatar">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Giới thiệu</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Mục tiêu nghề nghiệp</h3>
+                    <p>Trở thành một Web Developer chuyên nghiệp, có khả năng mở rộng sang mảng Game Developer và ứng dụng AI vào phát triển phần mềm.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Học vấn</h4>
+                                <p>Đại học Văn Lang - Web & AI</p>
+                                <span>Sinh viên năm 4</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Chứng chỉ</h4>
+                                <p>Game Developer</p>
+                                <span>Green Academy - Loại giỏi</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <h4>Ngoại ngữ</h4>
+                                <p>Tiếng Anh</p>
+                                <span>Giao tiếp tốt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Năm học</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Dự án</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Công nghệ</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Công ty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Kỹ năng</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TailwindCSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SvelteKit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Prisma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Unity</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Animation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Shader Graph</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>OpenCV</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Vercel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Kinh nghiệm làm việc</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Web Developer</h3>
+                        <h4>Công ty PCCC Phúc Anh</h4>
+                        <ul>
+                            <li>Phụ trách phát triển và vận hành hệ thống website thực tế cho doanh nghiệp</li>
+                            <li>Làm việc độc lập từ thiết kế UI đến backend và triển khai sản phẩm thông qua trang admin</li>
+                            <li>Giải quyết các vấn đề về bảo mật, phân quyền và tối ưu trải nghiệm người dùng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Game Developer Certificate</h3>
+                        <h4>Green Academy</h4>
+                        <ul>
+                            <li>Hoàn thành khóa học Game Developer với loại giỏi</li>
+                            <li>Thực hiện nhiều dự án game 2D và 3D</li>
+                            <li>Học Unity, C#, Animation và Shader Graph</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022-2025</div>
+                    <div class="timeline-content">
+                        <h3>Sinh viên Web & AI</h3>
+                        <h4>Đại học Văn Lang</h4>
+                        <ul>
+                            <li>Chuyên ngành Web & AI, hiện tại là sinh viên năm 4</li>
+                            <li>Học các công nghệ web hiện đại và AI/Machine Learning</li>
+                            <li>Thực hiện các dự án thực tế và nghiên cứu khoa học</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Dự án nổi bật</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=PCCC+Website" alt="Website PCCC">
+                        <div class="project-overlay">
+                            <a href="https://pccc-phuc-anh.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Website bán đồ PCCC</h3>
+                        <p>Website thương mại điện tử hoàn chỉnh cho công ty PCCC Phúc Anh, bao gồm hệ thống quản lý sản phẩm, đơn hàng và admin panel.</p>
+                        <div class="project-tech">
+                            <span>SvelteKit</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Vercel</span>
+                        </div>
+                        <span class="project-year">2025</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=Colorless+World" alt="The Colorless World">
+                        <div class="project-overlay">
+                            <a href="https://drive.google.com/drive/folders/1Azt6qXytumiC09zqe0drjWuEfoGdzivH?usp=sharing" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>The Colorless World</h3>
+                        <p>Game 2D platformer FPS với cơ chế chơi độc đáo, kết hợp yếu tố platform và bắn súng trong thế giới không màu sắc.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>2D Graphics</span>
+                            <span>Animation</span>
+                        </div>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4ade80/ffffff?text=Schizophrenia3D" alt="Schizophrenia3D">
+                        <div class="project-overlay">
+                            <a href="https://drive.google.com/drive/folders/1oGG8OloUnoLMfu5eet38xoqBiFl6S_3J?usp=drive_link" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Schizophrenia3D</h3>
+                        <p>Game 3D kinh dị góc nhìn thứ nhất với cơ chế tâm lý và horror elements, tạo ra trải nghiệm đáng sợ cho người chơi.</p>
+                        <div class="project-tech">
+                            <span>Unity 3D</span>
+                            <span>C#</span>
+                            <span>Horror Mechanics</span>
+                            <span>3D Modeling</span>
+                        </div>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/fbbf24/ffffff?text=Space+Shooter" alt="Space Shooter">
+                        <div class="project-overlay">
+                            <a href="https://drive.google.com/drive/folders/1ogn4f0glBYkE9aKC99hLtbpoueaFFncI?usp=sharing" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Space Shooter</h3>
+                        <p>Game bắn phi thuyền 2D kinh điển với nhiều cấp độ, enemy patterns và power-ups đa dạng.</p>
+                        <div class="project-tech">
+                            <span>Unity 2D</span>
+                            <span>C#</span>
+                            <span>Game Physics</span>
+                            <span>Particle Effects</span>
+                        </div>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/ef4444/ffffff?text=Brain+Tumor+AI" alt="Brain Tumor Detection">
+                        <div class="project-overlay">
+                            <a href="https://github.com/phanleanhkiet/detection-brain-tumor" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Brain Tumor Detection</h3>
+                        <p>Hệ thống AI sử dụng CNN để nhận diện khối u não thông qua ảnh X-ray với độ chính xác cao.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>CNN</span>
+                            <span>OpenCV</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Hãy kết nối với tôi!</h3>
+                    <p>Tôi luôn sẵn sàng thảo luận về các cơ hội hợp tác mới và dự án thú vị.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:plak280503@gmail.com">plak280503@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/phanleanhkiet" target="_blank">github.com/phanleanhkiet</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Trường</h4>
+                                <span>Đại học Văn Lang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Họ tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Chủ đề" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tin nhắn" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Phan Lê Anh Kiệt (castleP). All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/phanleanhkiet" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:plak280503@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "description": "CV Website của Phan Lê Anh Kiệt - Web & Game Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phanleanhkiet/My-CV.git"
+  },
+  "keywords": [
+    "cv",
+    "portfolio",
+    "web-developer",
+    "game-developer",
+    "vietnam"
+  ],
+  "author": "Phan Lê Anh Kiệt (castleP)",
+  "license": "MIT"
+}
