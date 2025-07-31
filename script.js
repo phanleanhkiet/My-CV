@@ -602,10 +602,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     */
     
-    // Add theme toggle functionality
+    // Add improved theme toggle functionality
     const themeToggle = document.createElement('button');
     themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     themeToggle.className = 'theme-toggle';
+    themeToggle.title = 'Toggle Dark Mode';
     themeToggle.style.cssText = `
         position: fixed;
         top: 50%;
@@ -614,25 +615,56 @@ document.addEventListener('DOMContentLoaded', () => {
         height: 50px;
         border: none;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(15px);
         color: #333;
         font-size: 18px;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 999;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         transform: translateY(-50%);
+        border: 2px solid rgba(102, 126, 234, 0.2);
     `;
     
     document.body.appendChild(themeToggle);
     
-    // Theme toggle functionality
-    let isDarkMode = false;
+    // Enhanced theme toggle functionality
+    let isDarkMode = localStorage.getItem('darkMode') === 'true';
+    
+    // Apply saved theme on load
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        themeToggle.style.background = 'rgba(30, 41, 59, 0.95)';
+        themeToggle.style.color = '#818cf8';
+        themeToggle.style.borderColor = 'rgba(129, 140, 248, 0.3)';
+    }
+    
     themeToggle.addEventListener('click', () => {
         isDarkMode = !isDarkMode;
         document.body.classList.toggle('dark-mode', isDarkMode);
-        themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        localStorage.setItem('darkMode', isDarkMode);
+        
+        if (isDarkMode) {
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            themeToggle.style.background = 'rgba(30, 41, 59, 0.95)';
+            themeToggle.style.color = '#818cf8';
+            themeToggle.style.borderColor = 'rgba(129, 140, 248, 0.3)';
+            themeToggle.style.boxShadow = '0 4px 20px rgba(129, 140, 248, 0.3)';
+        } else {
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            themeToggle.style.background = 'rgba(255, 255, 255, 0.95)';
+            themeToggle.style.color = '#333';
+            themeToggle.style.borderColor = 'rgba(102, 126, 234, 0.2)';
+            themeToggle.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        }
+        
+        // Add animation effect
+        themeToggle.style.transform = 'translateY(-50%) scale(0.9)';
+        setTimeout(() => {
+            themeToggle.style.transform = 'translateY(-50%) scale(1)';
+        }, 100);
     });
     
     // Add progress bar for page scroll
