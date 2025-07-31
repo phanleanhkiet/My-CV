@@ -561,7 +561,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Add loading screen
+    // Add loading screen (commented out - too slow for CV!)
+    /*
     const loadingScreen = document.createElement('div');
     loadingScreen.className = 'loading-screen';
     loadingScreen.innerHTML = `
@@ -590,15 +591,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.body.appendChild(loadingScreen);
     
-    // Hide loading screen after page load
+    // Hide loading screen after page load (fast!)
     window.addEventListener('load', () => {
         setTimeout(() => {
             loadingScreen.style.opacity = '0';
             setTimeout(() => {
                 loadingScreen.remove();
-            }, 500);
-        }, 1000);
+            }, 300);
+        }, 200);
     });
+    */
     
     // Add theme toggle functionality
     const themeToggle = document.createElement('button');
